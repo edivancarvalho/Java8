@@ -35,13 +35,18 @@ public class GuiMenuPrincipal extends JFrame{
     
     private void definirEventos(){
         miSair.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
          System.exit(0);
             }
         });
+        
+        miBotao.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // aqui vai o codigo para chama o exemplo8.3
+            }
+        });
     }
-    
+        
     public static void abrir(){
         GuiMenuPrincipal frame = new GuiMenuPrincipal();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
