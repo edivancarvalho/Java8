@@ -12,7 +12,7 @@ public class GuiBotao extends JPanel{
 
     private void inicializarComponentes() {
         setLayout(null);
-        imageIcon1 = new ImageIcon("java.jpg");
+        imageIcon1 = new ImageIcon("java.png");
         btMensagem = new JButton("Mensagem", imageIcon1);
         btMensagem.setBounds(50,20, 140, 38);
         btMensagem.setMnemonic(KeyEvent.VK_M);
@@ -38,19 +38,14 @@ public class GuiBotao extends JPanel{
         
         btTeimoso.addMouseListener(new MouseListener() {
             public void mouseClicked(MouseEvent e) {}
-
-            public void mousePressed(MouseEvent e) {}
-            
+            public void mousePressed(MouseEvent e) {}            
             public void mouseReleased(MouseEvent e) {}
-
             public void mouseEntered(MouseEvent e) {
                 btTeimoso.setBounds(50, 120, 100,25);
             }
-
             public void mouseExited(MouseEvent e) {
                 btTeimoso.setBounds(50,70,100,25);
             }
         });
     }
-    
 }
