@@ -47,7 +47,7 @@ public class GuiLogin extends JFrame {
                 String senha = String.valueOf(pfSenha.getPassword());
                 if (tflogin.getText().equals("java8") && senha.equals("java8")) {
                     frame.setVisible(false);
-                    //GuiMenuPrincipal.abrir();
+                    GuiMenuPrincipal.abrir();
                 } else {
                     JOptionPane.showMessageDialog(null, "Login ou Senha incorretas");
                 }
