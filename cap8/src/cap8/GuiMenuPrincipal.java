@@ -56,5 +56,6 @@ public class GuiMenuPrincipal extends JFrame{
         Dimension tela = Toolkit.getDefaultToolkit().getScreenSize();
         frame.setLocation((tela.width - frame.getSize().width) / 2,
         (tela.height - frame.getSize().height) / 2);
+        frame.setVisible(true);
     }
 }
