@@ -24,3 +24,9 @@ hs_err_pid*
 /JavaApplication22/nbproject/private/
 /cap8/nbproject/private/
 /cap8/build/
+/cap11/nbproject/private/
+/cap11/build/
+cap11/build.xml
+cap11/manifest.mf
+*.xml
+*.properties
