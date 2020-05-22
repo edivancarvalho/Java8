@@ -6,7 +6,7 @@ public class GuiMenuPrincipal extends JFrame{
     private Container contentPane;
     private JMenuBar mnBarra;
     private JMenu mnArquivo, mnExemplo;
-    private JMenuItem miSair, miBotao;
+    private JMenuItem miSair, miBotao, miCaixaOpcao;
     
     public GuiMenuPrincipal(){
         inicializarComponetes();
@@ -20,7 +20,7 @@ public class GuiMenuPrincipal extends JFrame{
         mnBarra = new JMenuBar();
         mnArquivo = new JMenu("Arquivo");
         mnArquivo.setMnemonic('A');
-        mnExemplo = new JMenu("Exmplo");
+        mnExemplo = new JMenu("Exemplos");
         mnExemplo.setMnemonic('E');
         miSair = new JMenuItem("Sair", new ImageIcon("sair.jpg"));
         miSair.setAccelerator(KeyStroke.getKeyStroke(
@@ -31,6 +31,12 @@ public class GuiMenuPrincipal extends JFrame{
         mnBarra.add(mnArquivo);
         mnBarra.add(mnExemplo);
         setJMenuBar(mnBarra);
+        
+        miBotao = new JMenuItem("Botao");
+        miCaixaOpcao = new JMenuItem("Caixa de Opcao");
+        mnExemplo.add(miBotao);
+        mnExemplo.add(miCaixaOpcao);
+        
     }
     
     private void definirEventos(){
@@ -41,10 +47,18 @@ public class GuiMenuPrincipal extends JFrame{
         });
         
         miBotao.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent arg0) {
                 GuiBotao botao = new GuiBotao();
                 contentPane.removeAll();
                 contentPane.add(botao);
+                contentPane.validate();
+            }
+        });
+        miCaixaOpcao.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                GuiCaixaOpcao guiCaixaOpcao = new GuiCaixaOpcao();
+                contentPane.removeAll();
+                contentPane.add(guiCaixaOpcao);
                 contentPane.validate();
             }
         });
@@ -58,4 +72,5 @@ public class GuiMenuPrincipal extends JFrame{
         (tela.height - frame.getSize().height) / 2);
         frame.setVisible(true);
     }
+    
 }

@@ -45,7 +45,7 @@ public class GuiLogin extends JFrame {
         btLogar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String senha = String.valueOf(pfSenha.getPassword());
-                if (tflogin.getText().equals("java8") && senha.equals("java8")) {
+                if (tflogin.getText().equals("admin") && senha.equals("admin")) {
                     frame.setVisible(false);
                     GuiMenuPrincipal.abrir();
                 } else {

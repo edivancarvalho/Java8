@@ -21,6 +21,7 @@ public class GuiBotao extends JPanel{
         btTeimoso.setBounds(50,70, 100,25);
         add(btMensagem);
         add(btTeimoso);
+        
     }
 
     private void definirEventos() {
@@ -44,7 +45,7 @@ public class GuiBotao extends JPanel{
             public void mouseReleased(MouseEvent e) {}
 
             public void mouseEntered(MouseEvent e) {
-                btTeimoso.setBounds(50, 120, 100,25);
+                btTeimoso.setBounds(50, 120, 100, 25);
             }
 
             public void mouseExited(MouseEvent e) {
