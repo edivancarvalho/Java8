@@ -11,10 +11,11 @@ package cap07;
  * @author edivan
  */
 public class Televisor {
-
+    //atributos
     public int volume;
     public int canal;
-
+    
+    //Metodos
     public void aumentarVolume() {
         volume++;
     }
