@@ -58,7 +58,7 @@ public class GuiMenuPrincipal extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 GuiCaixaOpcao guiCaixaOpcao = new GuiCaixaOpcao();
                 contentPane.removeAll();
-                contentPane.add(guiCaixaOpcao);
+                //contentPane.add(guiCaixaOpcao);
                 contentPane.validate();
             }
         });
