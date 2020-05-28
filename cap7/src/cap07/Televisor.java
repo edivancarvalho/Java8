@@ -1,9 +1,9 @@
 package cap07;
 
 /**
- * |------------------------| | Televisor | |------------------------| |
- * +volume:int | +canal |------------------------| | +aumentarVolume():void | |
- * +reduzirVolume():void | | +trocarCanal(int canal): void | + mostrar():string
+ * |------------------------| | Televisor | |------------------------| 
+ * /|  * +volume:int | +canal |------------------------| | +aumentarVolume():void | 
+ * /|+reduzirVolume():void | | +trocarCanal(int canal): void | + mostrar():string
  * |
  */
 /**
