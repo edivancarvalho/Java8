@@ -30,3 +30,4 @@ cap11/build.xml
 cap11/manifest.mf
 *.xml
 *.properties
+/ProjetoTrabalho/nbproject/private/
